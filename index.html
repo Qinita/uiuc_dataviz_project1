@@ -104,7 +104,7 @@ var line = d3.svg.line()
     .x(function(d) { return x(d.date); })
     .y(function(d) { return y(d.value); });
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#chart0").append("svg") 
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
@@ -189,7 +189,7 @@ function draw() {
 <a id="nasa-data-visualization" class="anchor" href="#nasa-data-visualization" aria-hidden="true"><span class="octicon octicon-link"></span></a>NASA Data Visualization</h3>
 
 <p>The data is originally from “Table Data: Global and Hemispheric Monthly Means and Zonal Annual Means.”,<a href="http://data.giss.nasa.gov/gistemp/">http://data.giss.nasa.gov/gistemp/</a> </p>
-
+<div id="chart0" class="toshow"> </div>
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
